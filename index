@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jacquelyn Bui">
+		<link rel="icon" href="logo.png">
+		<title>Dream Bakery</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js" defer></script>
+	</head>
+	<body>
+		<!--Light or dark mode control-->
+		<button id="lights">Dark Mode</button>
+		<div>
+			<header>
+				<h1>Dream<br>Bakery</h1>
+				<!--Navigation-->
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="menu.html">Menu</a>
+						</li>
+						<li>
+							<a href="locations.html">Locations</a>
+						</li>
+						<li>
+							<a href="shop.html">Shop</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!--Welcome section-->
+			<section id="intro">
+				<h2>Welcome to Dream&nbsp;Bakery</h2>
+				<p><span class="bold">Dream&nbsp;Bakery</span> prides itself in making fresh baked goods with healthy and natural ingredients for dogs. Everything is made from scratch from our excellent bakers here at <span class="bold">Dream&nbsp;Bakery</span>. We offer various type of treats for your furry friends, including but not limited to biscuits, cookies, muffins, cake, and frozen treats! Additionally, in our shop we sell dog toys and dog apparel. These are available to purchase both in-store and online with free delivery.<br>Come visit us with your dogs to see how our bakers make the treats with your very own eyes!<br>Or <span class="bold">contact us</span> below to place a custom order or for any other inquiries!</p>
+			</section>
+			<!--Product display-->
+			<section id = "popular">
+				<h2>Our Pup-ular Menu Items</h2>
+			</section>
+			<section id="menu">
+				<h2>Menu</h2>
+				<!--Product 1 control-->
+				<button id="pumpkin">Pumpkin & Oats Cookie</button>
+				<figure id="displayPumpkin">
+					<figcaption class="imgDisplay">Cookies made with pumpkin puree and oats.<br>Softly baked and cut with a bone-shaped cookie cutter.</figcaption>
+					<img src="pumpkin.jpg" alt="Bisquit treats for dogs on a tray with a bowl of pumpkin puree and a bowl of oats on the side" width="400" class="imgDisplay">
+				</figure>
+				<!--Product 2 control-->
+				<button id="carrot">Carrot Pupcake</button>
+				<figure id="displayCarrot">
+					<figcaption hidden>Cupcakes made with shredded carrots and applesauce.<br>Topped with cream cheese frosting and shredded carrots.</figcaption>
+					<img src="pupcake.jpeg" alt="Cupcakes in an orange cupcake liner, placed on a wooden stand surrounded by carrots and orange slices." width="400" hidden>
+				</figure>
+				<!--Product 3 control-->
+				<button id="pb">Peanut Butter & Banana Donut</button>
+				<figure id="displayPb">
+					<figcaption hidden>Donuts made of a fresh bananas mixed with peanut butter.<br>Topped with peanut butter glaze and a milkbone treat.</figcaption>
+					<img src="donut.jpg" alt="Donuts with light brown frosting and toppings on a baking rack." width="400" hidden>
+				</figure>
+			</section>
+			<!-- Contact Form -->
+			<form>
+				<h2>Contact Us</h2>
+				<!-- First Name -->
+				<label for="firstName">First Name<span class="required">*</span><br></label>
+				<input type="text" name="firstName" id="firstName" class="default"><span></span>
+				<!-- Last Name -->
+				<label for="lastName">Last Name<span class="required">*</span><br></label>
+				<input type="text" name="lastName" id="lastName" class="default"><span></span>
+				<!-- Phone Number -->
+				<label for="phoneNum">Phone Number<br></label>
+				<input type="tel" name="phoneNum" id="phoneNum" class="default"><span></span>
+				<!-- Email -->
+				<label for="emailAdd">Email Address<br></label>
+				<input type="email" name="emailAdd" id="emailAdd" class="default"><span></span>
+				<!-- Choice of Contact -->
+				<fieldset>
+					<legend>Choice of Contact<span class="required">*</span></legend>
+					<label for="phone" class="radio">
+						<span class="radio_input">
+							<input type="radio" name="contact" id="phone" required checked>
+							<span class="radio_control"></span>
+						</span>
+						<span class="radio_label">Phone</span>
+					</label>
+					<label for="email" class="radio">
+						<span class="radio_input">
+							<input type="radio" name="contact" id="email">
+							<span class="radio_control"></span>
+						</span>
+						<span class="radio_label">Email</span>
+					</label>
+				</fieldset>
+				<!-- Comments -->
+				<label for="comments">Comments<span class="required">*</span><br></label>
+				<textarea name="comments" id="comments" class="default"></textarea><span></span>
+				<!-- Submit Button -->
+				<input type="submit" id="mySubmit">
+				<p id="confirm"></p>
+			</form>
+			<!-- Gameplay -->
+			<section id="game">
+				<h2>Gameplay</h2>
+				<p>Pick a number 1-10, if you guess the winning number you'll be entered into a giveaway!</p>
+				<label for="userNum">Your number:</label>
+				<input type="number" name="userNum" id="userNum" min="1" max="10">
+				<span id="winningNum">Winning number:</span>
+				<span id="randomNum"></span>
+				<span id="gameMessage"></span>
+				<!-- Play Button -->
+				<button id="gamePlay">Play!</button>
+			</section>
+		</div>
+		<footer>
+			<a href="careers.html">Careers</a>
+			<a href="faq.html">FAQs</a>
+			<a href="contact.html">Contact</a>
+			<p>Dream&nbsp;Bakery Copyright &copy; 2022</p>
+		</footer>
+	</body>
+</html>
